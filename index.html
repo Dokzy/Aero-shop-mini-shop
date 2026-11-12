@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b9f5f4">
+  <meta name="description" content="AERO.SHOP – Frutiger Aero hangulatú digitális és kreatív termékek.">
+  <title>AERO.SHOP — a little more aqua</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky-glow"></div>
+  <header class="topbar">
+    <a class="logo" href="#"><span class="logo-orb">✦</span> AERO<span>.SHOP</span></a>
+    <nav><a href="#shop">Shop</a><a href="#about">About</a></nav>
+    <button class="cart-button" id="cart-toggle">Cart <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> DIGITAL GOODS · GOOD VIBRATIONS</div>
+        <h1>A little more<br><span>aqua.</span></h1>
+        <p>Apró digitális kincsek egy tisztább, színesebb és buborékosabb világból.</p>
+        <a class="main-cta" href="#shop">Felfedezem <span>↗</span></a>
+        <div class="hero-note">✧ made for your digital world</div>
+      </div>
+      <div class="hero-art" aria-label="Aqua buborék illusztráció">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="bubble bubble-big"></div><div class="bubble bubble-mid"></div>
+        <div class="bubble bubble-small"></div><div class="leaf leaf-one"></div><div class="leaf leaf-two"></div>
+        <div class="sparkle s-one">✦</div><div class="sparkle s-two">✧</div>
+        <div class="art-label">HELLO<br>FUTURE!</div>
+      </div>
+    </section>
+
+    <section class="ticker"><span>FRESH DIGITAL FINDS</span> ✦ <span>MADE WITH A LITTLE NOSTALGIA</span> ✦ <span>WELCOME TO AERO.SHOP</span></section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE COLLECTION</div><h2>Small things.<br><span>Big atmosphere.</span></h2></div>
+        <p>Válogass az első AERO kollekcióból.<br><small>A termékek jelenleg bemutató minták.</small></p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All items</button>
+        <button class="filter" data-filter="digital">Digital</button>
+        <button class="filter" data-filter="design">Design</button>
+        <button class="filter" data-filter="print">Print</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-orb">A</div>
+      <div><div class="eyebrow">A SMALL INTRODUCTION</div><h2>Welcome to the<br><span>blue side.</span></h2>
+      <p>Az AERO.SHOP egy Frutiger Aero ihletésű mini márka. Célunk, hogy a régi internet optimista, üveges, vízkék hangulatát újra életre keltsük.</p></div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#"><span class="logo-orb">✦</span> AERO<span>.SHOP</span></a><span>© 2026 AERO.SHOP · made of bubbles</span><a href="mailto:hello@example.com">Contact</a></footer>
+
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Kosár">
+    <div class="cart-head"><h3>Your cart <span>✧</span></h3><button id="cart-close" aria-label="Bezárás">×</button></div>
+    <div id="cart-items" class="cart-items"><p class="empty-cart">A kosarad még üres. 🌊</p></div>
+    <div class="cart-bottom"><div class="total"><span>Összesen</span><strong id="cart-total">0 Ft</strong></div><button class="checkout" id="checkout">Érdeklődés a rendelésről</button><small>Ez egy bemutató kosár, online fizetés még nincs bekapcsolva.</small></div>
+  </aside>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
